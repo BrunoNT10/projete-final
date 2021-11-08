@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Página de liberação</title>
+        <link href="estilo.css" type="text/css" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+
+        <script src = "init_firebase.js"></script>
+        <script src = "index.js"></script>
+
+    </head>
+    <body style="background-color:#d8e6cc">
+        <meta charset="utf-8">
+        <h2 class ="titulo_pagina">Analise a imagem e selecione o que deseja fazer</h2>
+        <div class="texto_abre_imagem">
+        	<Label id="resposta">Clique no botão para abrir a imagem do funcionário que teve problema com as EPI's</Label> 
+        <div>
+        <br>
+        <div>
+        	<button class = "estilo_botao" onclick="download()">Abrir imagem</button>
+        	<br>
+        	<br>
+        	<img src="" id="image">
+        </div>
+        <br>
+        <div>
+        	<h3 class = "estilo_texto"><Label id ="botaoresposta">Selecione o que deseja fazer</Label></h3>
+            <button class="estilo_botao" onclick="liberar()">Liberar</button>
+        	<button class="estilo_botao_verificar" onclick="verificar()">Verificar novamente</button>
+        	<button class="estilo_botao_esperar" onclick="esperar()">Mandar esperar</button>
+        </div>
+        <br>
+    </body>
+</html>
